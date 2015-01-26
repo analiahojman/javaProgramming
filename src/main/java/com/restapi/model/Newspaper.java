@@ -15,8 +15,8 @@ import com.restapi.enums.PrintingPaperTypeEnum;
 @Entity
 public class Newspaper extends Informative{
 
-	private PrintingPaperTypeEnum printingPaperType;
-	private Boolean printingInColor;
+	private PrintingPaperTypeEnum printingPaperType=PrintingPaperTypeEnum.REGULAR;
+	private Boolean printingInColor=false;
 	
 	/**
 	 * Default constructor used by JPA
@@ -34,6 +34,7 @@ public class Newspaper extends Informative{
 	public Newspaper(String name, String editorialName, Date date,
 			List<Post> posts) {
 		super(name, editorialName, date, posts);
+		this.setPrintingSettings(PrintingPaperTypeEnum.REGULAR, false);
 	}
 	
 	/**
@@ -44,7 +45,7 @@ public class Newspaper extends Informative{
 	 * @param date
 	 */
 	public Newspaper(String name, String editorialName, Date date) {
-		super(name, editorialName, date, null);
+		this(name, editorialName, date, null);
 	}
 	
 	/**

@@ -32,8 +32,7 @@ public class NewspaperService {
 	/**
 	 * Default constructor
 	 */
-	protected NewspaperService() {
-	}
+	public NewspaperService() {}
 
 	/**
 	 * Constructor

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.restapi.model.Informative;
-import com.restapi.repository.InformativeRepository;
+import com.restapi.service.InformativeService;
 
 /**
  * This controller handles all the HTTP request related to an informative.
@@ -20,7 +20,7 @@ import com.restapi.repository.InformativeRepository;
 public class InformativeController {
 
 	@Autowired
-	InformativeRepository informativeRepository;
+	InformativeService informativeService;
 	
 	/**
 	 * Print all the informatives
@@ -29,10 +29,7 @@ public class InformativeController {
 	@RequestMapping(value = "/print", method = RequestMethod.GET)
 	public List<Informative> printAll() {
 		
-		List<Informative> informatives = this.informativeRepository.findAll();
-		for (Informative currentInformative : informatives){
-			currentInformative.print();
-		}
+		List<Informative> informatives = this.informativeService.printAll();
 		return informatives;
 	}
 

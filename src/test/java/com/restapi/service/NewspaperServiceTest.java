@@ -19,9 +19,12 @@ import com.restapi.model.Post;
 import com.restapi.repository.NewspaperRepository;
 import com.restapi.repository.PostRepository;
 
-
+/**
+ * This class tests all the newspaper services
+ * @author analia.hojman
+ */
 public class NewspaperServiceTest {
-
+	
 	private NewspaperRepository newspaperRepositoryMock;
 	private PostRepository postRepositoryMock;
 	private NewspaperService newspaperService;
@@ -30,7 +33,6 @@ public class NewspaperServiceTest {
 	public void setUp() {
 		newspaperRepositoryMock = mock(NewspaperRepository.class);
 		postRepositoryMock = mock(PostRepository.class);
-		
 		newspaperService = new NewspaperService(newspaperRepositoryMock,postRepositoryMock);
 	}
 
