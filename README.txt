@@ -4,7 +4,6 @@ Date: January 2015
 The main goal with this application is to show my knowledge in Java programming.
 The project is still in progress so some functionalities and tests are missing.
 
-
 Description:
 The application is a rest API that allows to build different informatives such as newspaper or digital newspaper with their articles/posts.
 The rest API also allows to print all the informatives.
