@@ -1,6 +1,7 @@
 Author of the project: Analia Hojman
-Da: January 2015
-My main goal with this application is to show my knowledge in Java programming.
+Date: January 2015
+
+The main goal with this application is to show my knowledge in Java programming.
 The project is still in progress so some functionalities and tests are missing.
 
 
