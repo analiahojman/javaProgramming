@@ -1,8 +1,8 @@
 Author of the project: Analia Hojman
-Da: January 2015
-My main goal with this application is to show my knowledge in Java programming.
-The project is still in progress so some functionalities and tests are missing.
+Date: January 2015
 
+The main goal of this application is to show my knowledge in Java programming.
+The project is still in progress so some functionalities and tests are missing.
 
 Description:
 The application is a rest API that allows to build different informatives such as newspaper or digital newspaper with their articles/posts.
